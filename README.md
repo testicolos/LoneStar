@@ -31,4 +31,4 @@ The contact form validates required fields and prepares an email to `info@lonest
 
 ## Content and images
 
-The website uses the supplied GCC/MENA copy and original transparent gold logo. Unspecified team profiles and authorised client/partner logos are omitted until real details are supplied. Hero photography is stored locally in `images/` so the layout does not depend on third-party image URLs.
+The website uses the supplied GCC/MENA copy and original transparent gold logo. Unspecified team profiles are omitted until real details are supplied. The Partners & Clients page uses the six client logos from ACF’s website, as requested by the site owner. Hero photography is stored locally in `images/` so the layout does not depend on third-party image URLs.
