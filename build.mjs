@@ -29,7 +29,7 @@ for (const file of [
 }
 
 await mkdir(resolve(dist, 'images'), { recursive: true });
-for (const photo of ['west-bay-night.jpg', 'houston-skyline.jpg']) {
+for (const photo of ['west-bay-night.jpg', 'udc-tower-pearl.jpg']) {
   await cp(resolve(root, 'images', photo), resolve(dist, 'images', photo));
 }
 console.log('Build complete: dist/');
