@@ -9,7 +9,14 @@ await mkdir(dist, { recursive: true });
 
 for (const file of [
   'index.html',
+  'what-we-do.html',
+  'industries.html',
+  'our-team.html',
+  'partners-clients.html',
+  'contact.html',
+  'privacy.html',
   'style.css',
+  'site.js',
   'logo-header.png',
   'favicon.ico',
   'favicon-32x32.png',
@@ -21,4 +28,8 @@ for (const file of [
   await cp(resolve(root, file), resolve(dist, file));
 }
 
+await mkdir(resolve(dist, 'images'), { recursive: true });
+for (const photo of ['west-bay-night.jpg', 'houston-skyline.jpg']) {
+  await cp(resolve(root, 'images', photo), resolve(dist, 'images', photo));
+}
 console.log('Build complete: dist/');
