@@ -29,7 +29,7 @@ for (const file of [
 }
 
 await mkdir(resolve(dist, 'images'), { recursive: true });
-for (const photo of ['west-bay-night.jpg', 'udc-tower-pearl.jpg']) {
+for (const photo of ['west-bay-night.jpg', 'udc-tower-pearl.jpg', 'west-bay-background.webp', 'the-pearl-background.webp', 'udc-tower-background.webp', 'west-bay-mobile.webp', 'the-pearl-mobile.webp', 'udc-tower-mobile.webp']) {
   await cp(resolve(root, 'images', photo), resolve(dist, 'images', photo));
 }
 await mkdir(resolve(dist, 'images', 'clients'), { recursive: true });
